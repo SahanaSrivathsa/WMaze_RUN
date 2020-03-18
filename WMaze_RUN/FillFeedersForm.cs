@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WMaze_RUN
 {
-    public partial class Form1 : Form
+    public partial class FillFeedersForm : Form
     {
-        public Form1()
+        public FillFeedersForm()
         {
             InitializeComponent();
         }
