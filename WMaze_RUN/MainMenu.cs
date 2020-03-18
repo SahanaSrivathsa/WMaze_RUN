@@ -29,20 +29,20 @@ namespace WMaze_RUN
                     FFF.ShowDialog();
                     break;
 
-                case "Linear Track":
-                    LinearTrackForm LTF = new LinearTrackForm();
-                    LTF.ShowDialog();
-                    break;
+                //case "Linear Track":
+                //    LinearTrackForm LTF = new LinearTrackForm();
+                //    LTF.ShowDialog();
+                //    break;
 
-                case "W Maze":
-                    WMazeForm WMF = new WMazeForm();
-                    WMF.ShowDialog();
-                    break;
+                //case "W Maze":
+                //    WMazeForm WMF = new WMazeForm();
+                //    WMF.ShowDialog();
+                //    break;
 
-                case "Tetrode Turning":
-                    TetrodeTurningForm TTF = new TetrodeTurningForm();
-                    TTFF.ShowDialog();
-                    break;
+                //case "Tetrode Turning":
+                //    TetrodeTurningForm TTF = new TetrodeTurningForm();
+                //    TTF.ShowDialog();
+                //    break;
 
             }
 

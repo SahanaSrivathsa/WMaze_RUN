@@ -62,6 +62,7 @@
             this.FillBtn.TabIndex = 0;
             this.FillBtn.Text = "FILL";
             this.FillBtn.UseVisualStyleBackColor = true;
+            this.FillBtn.Click += new System.EventHandler(this.FillBtn_Click);
             // 
             // ChkAmtBtn
             // 
@@ -76,6 +77,7 @@
             this.ChkAmtBtn.TabIndex = 1;
             this.ChkAmtBtn.Text = "TEST";
             this.ChkAmtBtn.UseVisualStyleBackColor = true;
+            this.ChkAmtBtn.Click += new System.EventHandler(this.ChkAmtBtn_Click);
             // 
             // button2
             // 
@@ -90,6 +92,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "CHANGE";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
@@ -117,6 +120,7 @@
             this.F1_Btn.TabIndex = 7;
             this.F1_Btn.Text = "F1";
             this.F1_Btn.UseVisualStyleBackColor = false;
+            this.F1_Btn.Click += new System.EventHandler(this.F1_Btn_Click);
             // 
             // F2_btn
             // 
@@ -172,6 +176,7 @@
             this.FeederReturn_Btn.TabIndex = 11;
             this.FeederReturn_Btn.Text = "RETURN";
             this.FeederReturn_Btn.UseVisualStyleBackColor = true;
+            this.FeederReturn_Btn.Click += new System.EventHandler(this.FeederReturn_Btn_Click);
             // 
             // F1_StopBtn
             // 
@@ -311,7 +316,7 @@
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FillFeedersForm";
             this.Text = "Fill Feeders";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

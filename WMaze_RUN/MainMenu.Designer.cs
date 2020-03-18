@@ -89,7 +89,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
             this.Name = "MainMenu";
-            this.Text = "Main Menu";
+            this.Text = "5";
             this.ResumeLayout(false);
             this.PerformLayout();
 
