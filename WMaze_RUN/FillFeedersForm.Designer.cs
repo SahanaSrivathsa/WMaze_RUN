@@ -54,9 +54,9 @@
             this.FillBtn.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.FillBtn.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.FillBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
-            this.FillBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.FillBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.FillBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FillBtn.Location = new System.Drawing.Point(531, 81);
+            this.FillBtn.Location = new System.Drawing.Point(531, 150);
             this.FillBtn.Name = "FillBtn";
             this.FillBtn.Size = new System.Drawing.Size(104, 40);
             this.FillBtn.TabIndex = 0;
@@ -69,9 +69,9 @@
             this.ChkAmtBtn.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ChkAmtBtn.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ChkAmtBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
-            this.ChkAmtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ChkAmtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ChkAmtBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChkAmtBtn.Location = new System.Drawing.Point(531, 156);
+            this.ChkAmtBtn.Location = new System.Drawing.Point(531, 225);
             this.ChkAmtBtn.Name = "ChkAmtBtn";
             this.ChkAmtBtn.Size = new System.Drawing.Size(104, 40);
             this.ChkAmtBtn.TabIndex = 1;
@@ -86,7 +86,7 @@
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(531, 231);
+            this.button2.Location = new System.Drawing.Point(531, 300);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 40);
             this.button2.TabIndex = 2;
@@ -136,6 +136,7 @@
             this.F2_btn.TabIndex = 8;
             this.F2_btn.Text = "F2";
             this.F2_btn.UseVisualStyleBackColor = false;
+            this.F2_btn.Click += new System.EventHandler(this.F2_btn_Click);
             // 
             // F3_Btn
             // 
@@ -151,6 +152,7 @@
             this.F3_Btn.TabIndex = 9;
             this.F3_Btn.Text = "F3";
             this.F3_Btn.UseVisualStyleBackColor = false;
+            this.F3_Btn.Click += new System.EventHandler(this.F3_Btn_Click);
             // 
             // F4_Btn
             // 
@@ -166,6 +168,7 @@
             this.F4_Btn.TabIndex = 10;
             this.F4_Btn.Text = "F4";
             this.F4_Btn.UseVisualStyleBackColor = false;
+            this.F4_Btn.Click += new System.EventHandler(this.F4_Btn_Click);
             // 
             // FeederReturn_Btn
             // 
@@ -182,7 +185,6 @@
             // 
             this.F1_StopBtn.BackColor = System.Drawing.Color.Red;
             this.F1_StopBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.F1_StopBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.F1_StopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F1_StopBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F1_StopBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -193,12 +195,12 @@
             this.F1_StopBtn.Text = "STOP";
             this.F1_StopBtn.UseVisualStyleBackColor = false;
             this.F1_StopBtn.Visible = false;
+            this.F1_StopBtn.Click += new System.EventHandler(this.F1_StopBtn_Click);
             // 
             // F2_StopBtn
             // 
             this.F2_StopBtn.BackColor = System.Drawing.Color.Red;
             this.F2_StopBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.F2_StopBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.F2_StopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F2_StopBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F2_StopBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -209,12 +211,12 @@
             this.F2_StopBtn.Text = "STOP";
             this.F2_StopBtn.UseVisualStyleBackColor = false;
             this.F2_StopBtn.Visible = false;
+            this.F2_StopBtn.Click += new System.EventHandler(this.F2_StopBtn_Click);
             // 
             // F3_StopBtn
             // 
             this.F3_StopBtn.BackColor = System.Drawing.Color.Red;
             this.F3_StopBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.F3_StopBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.F3_StopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F3_StopBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F3_StopBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -225,12 +227,12 @@
             this.F3_StopBtn.Text = "STOP";
             this.F3_StopBtn.UseVisualStyleBackColor = false;
             this.F3_StopBtn.Visible = false;
+            this.F3_StopBtn.Click += new System.EventHandler(this.F3_StopBtn_Click);
             // 
             // F4_StopBtn
             // 
             this.F4_StopBtn.BackColor = System.Drawing.Color.Red;
             this.F4_StopBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.F4_StopBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.F4_StopBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.F4_StopBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F4_StopBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -241,6 +243,7 @@
             this.F4_StopBtn.Text = "STOP";
             this.F4_StopBtn.UseVisualStyleBackColor = false;
             this.F4_StopBtn.Visible = false;
+            this.F4_StopBtn.Click += new System.EventHandler(this.F4_StopBtn_Click);
             // 
             // FeederAmtTxtBox1
             // 
@@ -318,6 +321,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "FillFeedersForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fill Feeders";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
