@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO.Ports;
 
 
 
@@ -15,11 +16,29 @@ namespace WMaze_RUN
     public partial class FillFeedersForm : Form
     {
         public string fillMode;
-        
+        bool  isConnectedArduino = false;
+        private static readonly SerialPort serialPort = new SerialPort();
+        public BackgroundWorker felix = new BackgroundWorker();
+
         public FillFeedersForm()
         {
             InitializeComponent();
         }
+
+        private void CntArduino_Click(object sender, EventArgs e)
+        {
+            if (!isConnectedArduino)
+            {
+                connectToArduino();
+            }
+            else
+            {
+                disconnectFromArduino();
+            }
+
+        }
+
+        
 
         private void FeederReturn_Btn_Click(object sender, EventArgs e)
         {
@@ -132,6 +151,6 @@ namespace WMaze_RUN
             F4_StopBtn.Hide();
         }
 
-        
+      
     }
 }

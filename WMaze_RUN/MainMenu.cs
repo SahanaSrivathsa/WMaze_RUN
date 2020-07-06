@@ -53,7 +53,7 @@ namespace WMaze_RUN
         {
             if (string.Equals((sender as Button).Name, @"CloseButton"))
             {
-
+                Application.Exit();
             }
             // Do something proper to CloseButton.
             else

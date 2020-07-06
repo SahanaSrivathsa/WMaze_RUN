@@ -11,6 +11,7 @@ namespace WMazeLibrary
     public class Arduino
     {
         public static SerialPort serialPort;
+        public bool isConnectedArduino = false;
 
         public void Arduino_init()
         {
@@ -23,6 +24,10 @@ namespace WMazeLibrary
             serialPort.Open();
             serialPort.DiscardInBuffer();
             serialPort.DiscardOutBuffer();
+
+        }
+        private void connectToArduino()
+        {
 
         }
         public void listen_to_arduino(object sender, DoWorkEventArgs e)
@@ -125,5 +130,6 @@ namespace WMazeLibrary
 
 
         }
+    }
 }
 

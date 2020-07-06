@@ -43,11 +43,12 @@
             this.FeederAmtTxtBox2 = new System.Windows.Forms.TextBox();
             this.FeederAmtTxtBox3 = new System.Windows.Forms.TextBox();
             this.FeederAmtTxtBox4 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.Btn_groupBox = new System.Windows.Forms.GroupBox();
-            this.Fill_RBtn = new System.Windows.Forms.RadioButton();
-            this.TestAmt_RBtn = new System.Windows.Forms.RadioButton();
             this.ChangeAmt_RBtn = new System.Windows.Forms.RadioButton();
+            this.TestAmt_RBtn = new System.Windows.Forms.RadioButton();
+            this.Fill_RBtn = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CntArduino = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Btn_groupBox.SuspendLayout();
             this.SuspendLayout();
@@ -251,16 +252,6 @@
             this.FeederAmtTxtBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.FeederAmtTxtBox4.Visible = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 30);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Controls";
-            this.label1.UseWaitCursor = true;
-            // 
             // Btn_groupBox
             // 
             this.Btn_groupBox.Controls.Add(this.ChangeAmt_RBtn);
@@ -269,45 +260,13 @@
             this.Btn_groupBox.Controls.Add(this.label1);
             this.Btn_groupBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.Btn_groupBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_groupBox.Location = new System.Drawing.Point(522, 88);
+            this.Btn_groupBox.Location = new System.Drawing.Point(522, 135);
             this.Btn_groupBox.Name = "Btn_groupBox";
             this.Btn_groupBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.Btn_groupBox.Size = new System.Drawing.Size(122, 253);
+            this.Btn_groupBox.Size = new System.Drawing.Size(122, 224);
             this.Btn_groupBox.TabIndex = 26;
             this.Btn_groupBox.TabStop = false;
             this.Btn_groupBox.UseWaitCursor = true;
-            // 
-            // Fill_RBtn
-            // 
-            this.Fill_RBtn.Appearance = System.Windows.Forms.Appearance.Button;
-            this.Fill_RBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver;
-            this.Fill_RBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Fill_RBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fill_RBtn.Location = new System.Drawing.Point(9, 47);
-            this.Fill_RBtn.Name = "Fill_RBtn";
-            this.Fill_RBtn.Size = new System.Drawing.Size(105, 40);
-            this.Fill_RBtn.TabIndex = 27;
-            this.Fill_RBtn.TabStop = true;
-            this.Fill_RBtn.Text = "FILL";
-            this.Fill_RBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.Fill_RBtn.UseVisualStyleBackColor = true;
-            this.Fill_RBtn.CheckedChanged += new System.EventHandler(this.Fill_RBtn_CheckedChanged);
-            // 
-            // TestAmt_RBtn
-            // 
-            this.TestAmt_RBtn.Appearance = System.Windows.Forms.Appearance.Button;
-            this.TestAmt_RBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver;
-            this.TestAmt_RBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.TestAmt_RBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TestAmt_RBtn.Location = new System.Drawing.Point(9, 106);
-            this.TestAmt_RBtn.Name = "TestAmt_RBtn";
-            this.TestAmt_RBtn.Size = new System.Drawing.Size(105, 40);
-            this.TestAmt_RBtn.TabIndex = 28;
-            this.TestAmt_RBtn.TabStop = true;
-            this.TestAmt_RBtn.Text = "TEST";
-            this.TestAmt_RBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.TestAmt_RBtn.UseVisualStyleBackColor = true;
-            this.TestAmt_RBtn.CheckedChanged += new System.EventHandler(this.TestAmt_RBtn_CheckedChanged);
             // 
             // ChangeAmt_RBtn
             // 
@@ -323,7 +282,63 @@
             this.ChangeAmt_RBtn.Text = "CHANGE";
             this.ChangeAmt_RBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ChangeAmt_RBtn.UseVisualStyleBackColor = true;
+            this.ChangeAmt_RBtn.UseWaitCursor = true;
             this.ChangeAmt_RBtn.CheckedChanged += new System.EventHandler(this.ChangeAmt_RBtn_CheckedChanged);
+            // 
+            // TestAmt_RBtn
+            // 
+            this.TestAmt_RBtn.Appearance = System.Windows.Forms.Appearance.Button;
+            this.TestAmt_RBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver;
+            this.TestAmt_RBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TestAmt_RBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TestAmt_RBtn.Location = new System.Drawing.Point(9, 106);
+            this.TestAmt_RBtn.Name = "TestAmt_RBtn";
+            this.TestAmt_RBtn.Size = new System.Drawing.Size(105, 40);
+            this.TestAmt_RBtn.TabIndex = 28;
+            this.TestAmt_RBtn.TabStop = true;
+            this.TestAmt_RBtn.Text = "TEST";
+            this.TestAmt_RBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TestAmt_RBtn.UseVisualStyleBackColor = true;
+            this.TestAmt_RBtn.UseWaitCursor = true;
+            this.TestAmt_RBtn.CheckedChanged += new System.EventHandler(this.TestAmt_RBtn_CheckedChanged);
+            // 
+            // Fill_RBtn
+            // 
+            this.Fill_RBtn.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Fill_RBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver;
+            this.Fill_RBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fill_RBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fill_RBtn.Location = new System.Drawing.Point(9, 47);
+            this.Fill_RBtn.Name = "Fill_RBtn";
+            this.Fill_RBtn.Size = new System.Drawing.Size(105, 40);
+            this.Fill_RBtn.TabIndex = 27;
+            this.Fill_RBtn.TabStop = true;
+            this.Fill_RBtn.Text = "FILL";
+            this.Fill_RBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Fill_RBtn.UseVisualStyleBackColor = true;
+            this.Fill_RBtn.UseWaitCursor = true;
+            this.Fill_RBtn.CheckedChanged += new System.EventHandler(this.Fill_RBtn_CheckedChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 30);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Controls";
+            this.label1.UseWaitCursor = true;
+            // 
+            // CntArduino
+            // 
+            this.CntArduino.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CntArduino.Location = new System.Drawing.Point(515, 37);
+            this.CntArduino.Name = "CntArduino";
+            this.CntArduino.Size = new System.Drawing.Size(136, 72);
+            this.CntArduino.TabIndex = 27;
+            this.CntArduino.Text = "ARDUINO CONNECT";
+            this.CntArduino.UseVisualStyleBackColor = true;
+            this.CntArduino.Click += new System.EventHandler(this.CntArduino_Click);
             // 
             // FillFeedersForm
             // 
@@ -331,6 +346,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(670, 463);
+            this.Controls.Add(this.CntArduino);
             this.Controls.Add(this.Btn_groupBox);
             this.Controls.Add(this.FeederAmtTxtBox4);
             this.Controls.Add(this.FeederAmtTxtBox3);
@@ -376,10 +392,11 @@
         private System.Windows.Forms.TextBox FeederAmtTxtBox2;
         private System.Windows.Forms.TextBox FeederAmtTxtBox3;
         private System.Windows.Forms.TextBox FeederAmtTxtBox4;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox Btn_groupBox;
         private System.Windows.Forms.RadioButton ChangeAmt_RBtn;
         private System.Windows.Forms.RadioButton TestAmt_RBtn;
         private System.Windows.Forms.RadioButton Fill_RBtn;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button CntArduino;
     }
 }
