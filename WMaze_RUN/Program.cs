@@ -16,7 +16,7 @@ namespace WMaze_RUN
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainMenu());
+            Application.Run(new StartSplashScreen());
         }
     }
 }

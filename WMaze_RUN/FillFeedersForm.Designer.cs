@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FillFeedersForm));
-            this.FillBtn = new System.Windows.Forms.Button();
-            this.ChkAmtBtn = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.F1_Btn = new System.Windows.Forms.Button();
             this.F2_btn = new System.Windows.Forms.Button();
@@ -46,53 +43,14 @@
             this.FeederAmtTxtBox2 = new System.Windows.Forms.TextBox();
             this.FeederAmtTxtBox3 = new System.Windows.Forms.TextBox();
             this.FeederAmtTxtBox4 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Btn_groupBox = new System.Windows.Forms.GroupBox();
+            this.Fill_RBtn = new System.Windows.Forms.RadioButton();
+            this.TestAmt_RBtn = new System.Windows.Forms.RadioButton();
+            this.ChangeAmt_RBtn = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Btn_groupBox.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // FillBtn
-            // 
-            this.FillBtn.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.FillBtn.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.FillBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
-            this.FillBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.FillBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FillBtn.Location = new System.Drawing.Point(531, 150);
-            this.FillBtn.Name = "FillBtn";
-            this.FillBtn.Size = new System.Drawing.Size(104, 40);
-            this.FillBtn.TabIndex = 0;
-            this.FillBtn.Text = "FILL";
-            this.FillBtn.UseVisualStyleBackColor = true;
-            this.FillBtn.Click += new System.EventHandler(this.FillBtn_Click);
-            // 
-            // ChkAmtBtn
-            // 
-            this.ChkAmtBtn.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ChkAmtBtn.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ChkAmtBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
-            this.ChkAmtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.ChkAmtBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ChkAmtBtn.Location = new System.Drawing.Point(531, 225);
-            this.ChkAmtBtn.Name = "ChkAmtBtn";
-            this.ChkAmtBtn.Size = new System.Drawing.Size(104, 40);
-            this.ChkAmtBtn.TabIndex = 1;
-            this.ChkAmtBtn.Text = "TEST";
-            this.ChkAmtBtn.UseVisualStyleBackColor = true;
-            this.ChkAmtBtn.Click += new System.EventHandler(this.ChkAmtBtn_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ControlDark;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(531, 300);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 40);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "CHANGE";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox1
             // 
@@ -173,7 +131,7 @@
             // FeederReturn_Btn
             // 
             this.FeederReturn_Btn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FeederReturn_Btn.Location = new System.Drawing.Point(531, 428);
+            this.FeederReturn_Btn.Location = new System.Drawing.Point(531, 395);
             this.FeederReturn_Btn.Name = "FeederReturn_Btn";
             this.FeederReturn_Btn.Size = new System.Drawing.Size(104, 49);
             this.FeederReturn_Btn.TabIndex = 11;
@@ -293,12 +251,87 @@
             this.FeederAmtTxtBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.FeederAmtTxtBox4.Visible = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 30);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Controls";
+            this.label1.UseWaitCursor = true;
+            // 
+            // Btn_groupBox
+            // 
+            this.Btn_groupBox.Controls.Add(this.ChangeAmt_RBtn);
+            this.Btn_groupBox.Controls.Add(this.TestAmt_RBtn);
+            this.Btn_groupBox.Controls.Add(this.Fill_RBtn);
+            this.Btn_groupBox.Controls.Add(this.label1);
+            this.Btn_groupBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Btn_groupBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_groupBox.Location = new System.Drawing.Point(522, 88);
+            this.Btn_groupBox.Name = "Btn_groupBox";
+            this.Btn_groupBox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.Btn_groupBox.Size = new System.Drawing.Size(122, 253);
+            this.Btn_groupBox.TabIndex = 26;
+            this.Btn_groupBox.TabStop = false;
+            this.Btn_groupBox.UseWaitCursor = true;
+            // 
+            // Fill_RBtn
+            // 
+            this.Fill_RBtn.Appearance = System.Windows.Forms.Appearance.Button;
+            this.Fill_RBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver;
+            this.Fill_RBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Fill_RBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fill_RBtn.Location = new System.Drawing.Point(9, 47);
+            this.Fill_RBtn.Name = "Fill_RBtn";
+            this.Fill_RBtn.Size = new System.Drawing.Size(105, 40);
+            this.Fill_RBtn.TabIndex = 27;
+            this.Fill_RBtn.TabStop = true;
+            this.Fill_RBtn.Text = "FILL";
+            this.Fill_RBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Fill_RBtn.UseVisualStyleBackColor = true;
+            this.Fill_RBtn.CheckedChanged += new System.EventHandler(this.Fill_RBtn_CheckedChanged);
+            // 
+            // TestAmt_RBtn
+            // 
+            this.TestAmt_RBtn.Appearance = System.Windows.Forms.Appearance.Button;
+            this.TestAmt_RBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver;
+            this.TestAmt_RBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.TestAmt_RBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TestAmt_RBtn.Location = new System.Drawing.Point(9, 106);
+            this.TestAmt_RBtn.Name = "TestAmt_RBtn";
+            this.TestAmt_RBtn.Size = new System.Drawing.Size(105, 40);
+            this.TestAmt_RBtn.TabIndex = 28;
+            this.TestAmt_RBtn.TabStop = true;
+            this.TestAmt_RBtn.Text = "TEST";
+            this.TestAmt_RBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.TestAmt_RBtn.UseVisualStyleBackColor = true;
+            this.TestAmt_RBtn.CheckedChanged += new System.EventHandler(this.TestAmt_RBtn_CheckedChanged);
+            // 
+            // ChangeAmt_RBtn
+            // 
+            this.ChangeAmt_RBtn.Appearance = System.Windows.Forms.Appearance.Button;
+            this.ChangeAmt_RBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.Silver;
+            this.ChangeAmt_RBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ChangeAmt_RBtn.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChangeAmt_RBtn.Location = new System.Drawing.Point(9, 167);
+            this.ChangeAmt_RBtn.Name = "ChangeAmt_RBtn";
+            this.ChangeAmt_RBtn.Size = new System.Drawing.Size(105, 40);
+            this.ChangeAmt_RBtn.TabIndex = 29;
+            this.ChangeAmt_RBtn.TabStop = true;
+            this.ChangeAmt_RBtn.Text = "CHANGE";
+            this.ChangeAmt_RBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ChangeAmt_RBtn.UseVisualStyleBackColor = true;
+            this.ChangeAmt_RBtn.CheckedChanged += new System.EventHandler(this.ChangeAmt_RBtn_CheckedChanged);
+            // 
             // FillFeedersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(647, 509);
+            this.ClientSize = new System.Drawing.Size(670, 463);
+            this.Controls.Add(this.Btn_groupBox);
             this.Controls.Add(this.FeederAmtTxtBox4);
             this.Controls.Add(this.FeederAmtTxtBox3);
             this.Controls.Add(this.FeederAmtTxtBox2);
@@ -312,9 +345,6 @@
             this.Controls.Add(this.F3_Btn);
             this.Controls.Add(this.F2_btn);
             this.Controls.Add(this.F1_Btn);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.ChkAmtBtn);
-            this.Controls.Add(this.FillBtn);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -324,16 +354,14 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fill Feeders";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Btn_groupBox.ResumeLayout(false);
+            this.Btn_groupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button FillBtn;
-        private System.Windows.Forms.Button ChkAmtBtn;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button F1_Btn;
         private System.Windows.Forms.Button F2_btn;
@@ -348,5 +376,10 @@
         private System.Windows.Forms.TextBox FeederAmtTxtBox2;
         private System.Windows.Forms.TextBox FeederAmtTxtBox3;
         private System.Windows.Forms.TextBox FeederAmtTxtBox4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox Btn_groupBox;
+        private System.Windows.Forms.RadioButton ChangeAmt_RBtn;
+        private System.Windows.Forms.RadioButton TestAmt_RBtn;
+        private System.Windows.Forms.RadioButton Fill_RBtn;
     }
 }

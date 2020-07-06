@@ -57,6 +57,12 @@
     <Compile Include="FillFeedersForm.Designer.cs">
       <DependentUpon>FillFeedersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LinearTrackForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LinearTrackForm.Designer.cs">
+      <DependentUpon>LinearTrackForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,8 +71,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartSplashScreen.Designer.cs">
+      <DependentUpon>StartSplashScreen.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FillFeedersForm.resx">
       <DependentUpon>FillFeedersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LinearTrackForm.resx">
+      <DependentUpon>LinearTrackForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -80,6 +95,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="StartSplashScreen.resx">
+      <DependentUpon>StartSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

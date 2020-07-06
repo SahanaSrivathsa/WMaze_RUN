@@ -25,27 +25,36 @@ namespace WMaze_RUN
         {
             this.Close();
         }
-
-
-        private void FillBtn_Click(object sender, EventArgs e)
+        private void Fill_RBtn_CheckedChanged(object sender, EventArgs e)
         {
             fillMode = "FILL";
         }
 
-        private void ChkAmtBtn_Click(object sender, EventArgs e)
+        private void TestAmt_RBtn_CheckedChanged(object sender, EventArgs e)
         {
             fillMode = "TEST";
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ChangeAmt_RBtn_CheckedChanged(object sender, EventArgs e)
         {
-            fillMode = "CHANGE";
-            FeederAmtTxtBox1.Show();
-            FeederAmtTxtBox2.Show();
-            FeederAmtTxtBox3.Show();
-            FeederAmtTxtBox4.Show();
+            if (ChangeAmt_RBtn.Checked == true)
+            {
+                fillMode = "CHANGE";
+                FeederAmtTxtBox1.Show();
+                FeederAmtTxtBox2.Show();
+                FeederAmtTxtBox3.Show();
+                FeederAmtTxtBox4.Show();
 
-            
+            }
+            if (ChangeAmt_RBtn.Checked == false)
+            {
+                FeederAmtTxtBox1.Hide();
+                FeederAmtTxtBox2.Hide();
+                FeederAmtTxtBox3.Hide();
+                FeederAmtTxtBox4.Hide();
+
+            }
+
         }
 
         private void F1_Btn_Click(object sender, EventArgs e)
@@ -122,5 +131,7 @@ namespace WMaze_RUN
         {
             F4_StopBtn.Hide();
         }
+
+        
     }
 }
