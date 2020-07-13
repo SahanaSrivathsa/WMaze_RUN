@@ -167,7 +167,7 @@
             // 
             // RatWeightPct_Label
             // 
-            this.RatWeightPct_Label.Location = new System.Drawing.Point(265, 155);
+            this.RatWeightPct_Label.Location = new System.Drawing.Point(312, 155);
             this.RatWeightPct_Label.Name = "RatWeightPct_Label";
             this.RatWeightPct_Label.Size = new System.Drawing.Size(109, 31);
             this.RatWeightPct_Label.TabIndex = 6;
@@ -232,10 +232,10 @@
             // Timer_Label
             // 
             this.Timer_Label.AutoSize = true;
-            this.Timer_Label.Font = new System.Drawing.Font("Segoe UI", 56.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Timer_Label.Location = new System.Drawing.Point(604, 22);
+            this.Timer_Label.Font = new System.Drawing.Font("Segoe UI", 67.5F, System.Drawing.FontStyle.Bold);
+            this.Timer_Label.Location = new System.Drawing.Point(613, 15);
             this.Timer_Label.Name = "Timer_Label";
-            this.Timer_Label.Size = new System.Drawing.Size(234, 100);
+            this.Timer_Label.Size = new System.Drawing.Size(282, 120);
             this.Timer_Label.TabIndex = 2;
             this.Timer_Label.Text = "00:00";
             // 
@@ -253,7 +253,7 @@
             // 
             this.LapsPanel.Controls.Add(this.label1);
             this.LapsPanel.Controls.Add(this.LapsValue_Label);
-            this.LapsPanel.Location = new System.Drawing.Point(874, 12);
+            this.LapsPanel.Location = new System.Drawing.Point(891, 13);
             this.LapsPanel.Name = "LapsPanel";
             this.LapsPanel.Size = new System.Drawing.Size(120, 124);
             this.LapsPanel.TabIndex = 4;
@@ -340,7 +340,7 @@
             this.Epochs_GrpBox.Controls.Add(this.PreSleep_RBtn);
             this.Epochs_GrpBox.Controls.Add(this.Task_RBtn);
             this.Epochs_GrpBox.Controls.Add(this.PostSleep_RBtn);
-            this.Epochs_GrpBox.Location = new System.Drawing.Point(872, 137);
+            this.Epochs_GrpBox.Location = new System.Drawing.Point(1038, 12);
             this.Epochs_GrpBox.Name = "Epochs_GrpBox";
             this.Epochs_GrpBox.Size = new System.Drawing.Size(124, 166);
             this.Epochs_GrpBox.TabIndex = 10;
@@ -349,7 +349,7 @@
             // SaveLT_Btn
             // 
             this.SaveLT_Btn.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveLT_Btn.Location = new System.Drawing.Point(874, 403);
+            this.SaveLT_Btn.Location = new System.Drawing.Point(1038, 228);
             this.SaveLT_Btn.Name = "SaveLT_Btn";
             this.SaveLT_Btn.Size = new System.Drawing.Size(124, 57);
             this.SaveLT_Btn.TabIndex = 11;
@@ -363,7 +363,7 @@
             this.BehaviourNotes_TxtBox.Location = new System.Drawing.Point(489, 168);
             this.BehaviourNotes_TxtBox.Multiline = true;
             this.BehaviourNotes_TxtBox.Name = "BehaviourNotes_TxtBox";
-            this.BehaviourNotes_TxtBox.Size = new System.Drawing.Size(365, 126);
+            this.BehaviourNotes_TxtBox.Size = new System.Drawing.Size(522, 126);
             this.BehaviourNotes_TxtBox.TabIndex = 12;
             this.BehaviourNotes_TxtBox.Text = "Behavioural Notes:";
             this.BehaviourNotes_TxtBox.TextChanged += new System.EventHandler(this.BehaviourNotes_TxtBox_TextChanged);
@@ -377,7 +377,8 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(489, 320);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.RowHeadersWidth = 62;
+            this.dataGridView1.Size = new System.Drawing.Size(692, 169);
             this.dataGridView1.TabIndex = 13;
             // 
             // LinearTrackForm
@@ -385,7 +386,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1008, 506);
+            this.ClientSize = new System.Drawing.Size(1193, 503);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.BehaviourNotes_TxtBox);
             this.Controls.Add(this.SaveLT_Btn);
@@ -400,6 +401,7 @@
             this.Name = "LinearTrackForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "LinearTrackForm";
+            this.Load += new System.EventHandler(this.LinearTrackForm_Load);
             this.RatDetails_GrpBox.ResumeLayout(false);
             this.RatDetails_GrpBox.PerformLayout();
             this.LapsPanel.ResumeLayout(false);

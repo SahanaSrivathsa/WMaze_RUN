@@ -10,11 +10,11 @@ namespace WMazeLibrary
 {
     public class Arduino
     {
-        public static SerialPort serialPort;
-        public bool isConnectedArduino = false;
-
+        
+         private static readonly SerialPort serialPort = new SerialPort();
         public void Arduino_init()
         {
+            
             serialPort = new SerialPort();
             serialPort.BaudRate = 9600;
             serialPort.PortName = "COM3";
@@ -26,10 +26,7 @@ namespace WMazeLibrary
             serialPort.DiscardOutBuffer();
 
         }
-        private void connectToArduino()
-        {
-
-        }
+        
         public void listen_to_arduino(object sender, DoWorkEventArgs e)
         //The "listener" that is the mediator between the worker (Felix) and the updater
         {

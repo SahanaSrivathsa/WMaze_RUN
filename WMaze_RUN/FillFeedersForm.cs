@@ -17,7 +17,7 @@ namespace WMaze_RUN
     {
         public string fillMode;
         bool  isConnectedArduino = false;
-        private static readonly SerialPort serialPort = new SerialPort();
+        private static  SerialPort serialPort = new SerialPort();
         public BackgroundWorker felix = new BackgroundWorker();
 
         public FillFeedersForm()
@@ -33,12 +33,28 @@ namespace WMaze_RUN
             }
             else
             {
-                disconnectFromArduino();
+                
             }
 
         }
 
-        
+        public void connectToArduino()
+        {
+            isConnectedArduino = true;
+            serialPort = new SerialPort
+            {
+                BaudRate = 9600,
+                PortName = "COM3",
+                Encoding = Encoding.UTF8,
+                DiscardNull = true,
+                WriteBufferSize = 10000
+            };
+            serialPort.Open();
+            serialPort.DiscardInBuffer();
+            serialPort.DiscardOutBuffer();
+            
+
+        }
 
         private void FeederReturn_Btn_Click(object sender, EventArgs e)
         {
