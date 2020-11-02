@@ -11,8 +11,8 @@ namespace WMazeLibrary
     /// </summary>
     public class CohortModel
     {
-        public List<RatName> CohortRats { get; set; } = new List<RatName>();
-        public List<RatAge> CohortAges { get; set; } = new List<RatAge>();
+        //public List<RatName> CohortRats { get; set; } = new List<RatName>();
+        //public List<RatAge> CohortAges { get; set; } = new List<RatAge>();
         public string CohortName { get; set; }
     }
 }

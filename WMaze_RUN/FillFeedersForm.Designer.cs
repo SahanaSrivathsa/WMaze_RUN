@@ -49,6 +49,7 @@
             this.Fill_RBtn = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.CntArduino = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Btn_groupBox.SuspendLayout();
             this.SuspendLayout();
@@ -258,7 +259,7 @@
             this.Btn_groupBox.Controls.Add(this.TestAmt_RBtn);
             this.Btn_groupBox.Controls.Add(this.Fill_RBtn);
             this.Btn_groupBox.Controls.Add(this.label1);
-            this.Btn_groupBox.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Btn_groupBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.Btn_groupBox.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_groupBox.Location = new System.Drawing.Point(522, 135);
             this.Btn_groupBox.Name = "Btn_groupBox";
@@ -266,7 +267,6 @@
             this.Btn_groupBox.Size = new System.Drawing.Size(122, 224);
             this.Btn_groupBox.TabIndex = 26;
             this.Btn_groupBox.TabStop = false;
-            this.Btn_groupBox.UseWaitCursor = true;
             // 
             // ChangeAmt_RBtn
             // 
@@ -282,7 +282,6 @@
             this.ChangeAmt_RBtn.Text = "CHANGE";
             this.ChangeAmt_RBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ChangeAmt_RBtn.UseVisualStyleBackColor = true;
-            this.ChangeAmt_RBtn.UseWaitCursor = true;
             this.ChangeAmt_RBtn.CheckedChanged += new System.EventHandler(this.ChangeAmt_RBtn_CheckedChanged);
             // 
             // TestAmt_RBtn
@@ -299,7 +298,6 @@
             this.TestAmt_RBtn.Text = "TEST";
             this.TestAmt_RBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.TestAmt_RBtn.UseVisualStyleBackColor = true;
-            this.TestAmt_RBtn.UseWaitCursor = true;
             this.TestAmt_RBtn.CheckedChanged += new System.EventHandler(this.TestAmt_RBtn_CheckedChanged);
             // 
             // Fill_RBtn
@@ -316,7 +314,6 @@
             this.Fill_RBtn.Text = "FILL";
             this.Fill_RBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Fill_RBtn.UseVisualStyleBackColor = true;
-            this.Fill_RBtn.UseWaitCursor = true;
             this.Fill_RBtn.CheckedChanged += new System.EventHandler(this.Fill_RBtn_CheckedChanged);
             // 
             // label1
@@ -327,7 +324,6 @@
             this.label1.Size = new System.Drawing.Size(96, 30);
             this.label1.TabIndex = 26;
             this.label1.Text = "Controls";
-            this.label1.UseWaitCursor = true;
             // 
             // CntArduino
             // 
@@ -340,12 +336,22 @@
             this.CntArduino.UseVisualStyleBackColor = true;
             this.CntArduino.Click += new System.EventHandler(this.CntArduino_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(340, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 25);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "label2";
+            // 
             // FillFeedersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(670, 463);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.CntArduino);
             this.Controls.Add(this.Btn_groupBox);
             this.Controls.Add(this.FeederAmtTxtBox4);
@@ -398,5 +404,6 @@
         private System.Windows.Forms.RadioButton Fill_RBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button CntArduino;
+        private System.Windows.Forms.Label label2;
     }
 }

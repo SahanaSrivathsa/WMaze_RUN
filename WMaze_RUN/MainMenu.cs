@@ -16,7 +16,7 @@ namespace WMaze_RUN
         public MainMenu()
         {
             InitializeComponent();
-            
+
 
         }
 
@@ -60,7 +60,7 @@ namespace WMaze_RUN
             {
                 Application.Exit();
             }
-        // Then assume that X has been clicked and act accordingly.
-}
+            // Then assume that X has been clicked and act accordingly.
+        }
     }
 }

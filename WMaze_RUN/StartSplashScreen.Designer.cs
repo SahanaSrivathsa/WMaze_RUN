@@ -57,7 +57,7 @@
             // 
             this.Text.AutoSize = true;
             this.Text.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Text.Location = new System.Drawing.Point(113, 528);
+            this.Text.Location = new System.Drawing.Point(113, 550);
             this.Text.Name = "Text";
             this.Text.Size = new System.Drawing.Size(385, 37);
             this.Text.TabIndex = 1;
@@ -67,7 +67,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semilight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(169, 565);
+            this.label1.Location = new System.Drawing.Point(169, 587);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(273, 17);
             this.label1.TabIndex = 2;
