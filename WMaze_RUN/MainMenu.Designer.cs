@@ -42,7 +42,7 @@
             this.HeaderLabel.Location = new System.Drawing.Point(12, 23);
             this.HeaderLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.HeaderLabel.Name = "HeaderLabel";
-            this.HeaderLabel.Size = new System.Drawing.Size(288, 45);
+            this.HeaderLabel.Size = new System.Drawing.Size(432, 65);
             this.HeaderLabel.TabIndex = 0;
             this.HeaderLabel.Text = "Experiment Mode";
             // 
@@ -60,7 +60,7 @@
             "Tetrode Turning"});
             this.ExpModeListBox.Location = new System.Drawing.Point(59, 94);
             this.ExpModeListBox.Name = "ExpModeListBox";
-            this.ExpModeListBox.Size = new System.Drawing.Size(194, 136);
+            this.ExpModeListBox.Size = new System.Drawing.Size(194, 104);
             this.ExpModeListBox.TabIndex = 1;
             // 
             // MainMenuSelectBtn
@@ -77,10 +77,10 @@
             // 
             // MainMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 30F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(312, 345);
+            this.ClientSize = new System.Drawing.Size(549, 570);
             this.Controls.Add(this.MainMenuSelectBtn);
             this.Controls.Add(this.ExpModeListBox);
             this.Controls.Add(this.HeaderLabel);

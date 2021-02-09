@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WMaze_RUN
+namespace WMaze_RUN 
 {
     public partial class LinearTrackForm : Form
     {
@@ -30,6 +30,11 @@ namespace WMaze_RUN
         private void SaveLT_Btn_Click(object sender, EventArgs e)
         {
             this.Close();
+
+        }
+
+        private void LinearTrackForm_Load(object sender, EventArgs e)
+        {
 
         }
     }
