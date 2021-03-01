@@ -22,7 +22,7 @@ namespace WMaze_RUN
 
         private void MainMenuSelectBtn_Click(object sender, EventArgs e)
         {
-            switch (ExpModeListBox.SelectedItem.ToString())
+            switch (ExpMode_ListBox.SelectedItem.ToString())
             {
                 case "Fill Feeders":
                     FillFeedersForm FFF = new FillFeedersForm();
@@ -49,18 +49,21 @@ namespace WMaze_RUN
 
 
         }
-        private void MainMenu_FormClosing(object sender, FormClosingEventArgs e)
+
+
+        private void ExpMode_ListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (string.Equals((sender as Button).Name, @"CloseButton"))
-            {
-                Application.Exit();
-            }
-            // Do something proper to CloseButton.
-            else
-            {
-                Application.Exit();
-            }
-            // Then assume that X has been clicked and act accordingly.
+
+        }
+
+        private void ExpMode_ListBox_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainMenu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
