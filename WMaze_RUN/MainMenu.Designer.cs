@@ -84,7 +84,6 @@ namespace WMaze_RUN
             this.ExpMode_ListBox.TabIndex = 1;
             this.ExpMode_ListBox.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.DrawItemHandler);
             this.ExpMode_ListBox.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.MeasureItemHandler);
-            this.ExpMode_ListBox.SelectedIndexChanged += new System.EventHandler(this.ExpMode_ListBox_SelectedIndexChanged_1);
             // 
             // MainMenu
             // 
@@ -102,7 +101,6 @@ namespace WMaze_RUN
             this.Name = "MainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main Menu";
-            this.Load += new System.EventHandler(this.MainMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

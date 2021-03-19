@@ -50,20 +50,9 @@ namespace WMaze_RUN
 
         }
 
-
-        private void ExpMode_ListBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void MainMenu_FormClosed(object sender, FormClosedEventArgs e)
         {
-
-        }
-
-        private void ExpMode_ListBox_SelectedIndexChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void MainMenu_Load(object sender, EventArgs e)
-        {
-
+            Application.Exit();
         }
     }
 }

@@ -49,7 +49,6 @@
             this.Fill_RBtn = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.CntArduino = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Btn_groupBox.SuspendLayout();
             this.SuspendLayout();
@@ -336,22 +335,12 @@
             this.CntArduino.UseVisualStyleBackColor = true;
             this.CntArduino.Click += new System.EventHandler(this.CntArduino_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(340, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 25);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "label2";
-            // 
             // FillFeedersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(670, 463);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.CntArduino);
             this.Controls.Add(this.Btn_groupBox);
             this.Controls.Add(this.FeederAmtTxtBox4);
@@ -404,6 +393,5 @@
         private System.Windows.Forms.RadioButton Fill_RBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button CntArduino;
-        private System.Windows.Forms.Label label2;
     }
 }
